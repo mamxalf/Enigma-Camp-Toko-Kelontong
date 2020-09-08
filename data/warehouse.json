@@ -1,0 +1,18 @@
+[
+ {
+  "Id": "2e76cbd43db8e0a97fb753ff71f26154",
+  "Name": "Gudang Garam",
+  "Address": "Bulu, Parakan",
+  "Large": 200,
+  "Info": "Tempat Besar",
+  "Price": 1000000
+ },
+ {
+  "Id": "5eed3fd88c9f6aa9e0463253e211e67e",
+  "Name": "Djarum",
+  "Address": "Gyanti, Temanggung",
+  "Large": 900,
+  "Info": "Tempat Luas",
+  "Price": 100000
+ }
+]
