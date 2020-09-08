@@ -23,6 +23,14 @@ func (rr *RentalRepository) AddNewRental(rental *Rental) {
 	data := []byte(rental.Name)
 	rental.Id = fmt.Sprintf("%x", md5.Sum(data))
 
+	//var price float64
+	//for _, j := range rr.warehouseRepo.findAllWarehouse(){
+	//	if rental.PWarehouse == j.Name {
+	//		price = j.Price
+	//	}
+	//}
+
+	//rental.Price = rental.Large * price
 	rental.Price = rental.Large * 10000
 	*rr.rentalList = append(*rr.rentalList, rental)
 	rr.rentalListInfra.saveToFileR(rr.rentalList)
