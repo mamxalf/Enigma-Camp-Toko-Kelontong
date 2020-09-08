@@ -33,7 +33,7 @@ func (wd *WarehouseDelivery) Create() {
 		case userChoice == "02":
 			wd.viewWarehouseList()
 		case userChoice == "q":
-			isExist = true
+			start()
 		default:
 			fmt.Println("Unknown Menu Code")
 
@@ -54,7 +54,7 @@ func (wd *WarehouseDelivery) mainMenuForm() {
 	var appMenu = map[string]string{
 		"01": "Add Warehouse",
 		"02": "View list Warehouse",
-		"q":  "Quit aplication",
+		"q":  "Back aplication",
 	}
 	fmt.Printf("%s\n", strings.Repeat("*", 30))
 	fmt.Printf("%26s\n", "Warehouse Bro !")

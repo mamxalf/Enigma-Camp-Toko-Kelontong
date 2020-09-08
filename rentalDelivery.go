@@ -33,7 +33,7 @@ func (rd *RentalDelivery) Create() {
 		case userChoice == "02":
 			rd.viewRentalList()
 		case userChoice == "q":
-			isExist = true
+			start()
 		default:
 			fmt.Println("Unknown Menu Code")
 
@@ -54,7 +54,7 @@ func (rd *RentalDelivery) mainMenuForm() {
 	var appMenu = map[string]string{
 		"01": "Add Rental",
 		"02": "View list Rental",
-		"q":  "Quit aplication",
+		"q":  "Back aplication",
 	}
 	fmt.Printf("%s\n", strings.Repeat("*", 30))
 	fmt.Printf("%26s\n", "Rental Bro !")

@@ -8,8 +8,8 @@ func NewRentalService(repo *RentalRepository) *RentalService {
 	return &RentalService{r: repo}
 }
 
-func (rs *RentalService) registerNewRental(w *Rental) {
-	rs.r.AddNewRental(w)
+func (rs *RentalService) registerNewRental(r *Rental) {
+	rs.r.AddNewRental(r)
 }
 
 func (rs *RentalService) getAllRentalList() []*Rental {

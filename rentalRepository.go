@@ -1,10 +1,16 @@
 package main
 
+import (
+	"crypto/md5"
+	"fmt"
+)
+
 type RentalRepository struct {
 	rentalList *[]*Rental
 	rentalListInfra *RentalRepositoryInfrastructure
-	warehouseList Warehouse
+	warehouseList []*Warehouse
 	warehouseRepo *WarehouseRepository
+	//warehouseList *WarehouseRepositoryInfrastructure
 
 }
 
@@ -14,8 +20,10 @@ func NewRentalRepository(datapath string, rentalList []*Rental) *RentalRepositor
 }
 
 func (rr *RentalRepository) AddNewRental(rental *Rental) {
+	data := []byte(rental.Name)
+	rental.Id = fmt.Sprintf("%x", md5.Sum(data))
 
-	rental.Price = 9000
+	rental.Price = rental.Large * 10000
 	*rr.rentalList = append(*rr.rentalList, rental)
 	rr.rentalListInfra.saveToFileR(rr.rentalList)
 }

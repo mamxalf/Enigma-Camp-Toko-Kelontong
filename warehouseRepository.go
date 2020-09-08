@@ -6,7 +6,7 @@ import (
 )
 
 type WarehouseRepository struct {
-	w *Warehouse
+	w Warehouse
 	warehouseList *[]*Warehouse
 	warehouseListInfra *WarehouseRepositoryInfrastructure
 }
@@ -28,7 +28,7 @@ func (wr *WarehouseRepository) findAllWarehouse() []*Warehouse {
 	return *wr.warehouseList
 }
 
-func (wr *WarehouseRepository) findByName(Name string) float64 {
+func (wr WarehouseRepository) findByName(Name string) float64 {
 	//var filter = func(w Warehouse) {
 	var price float64
 		if Name == wr.w.Name {

@@ -1,72 +1,12 @@
 [
  {
-  "Id": "7f0bbaad1677c998a9e0fc5958cbebb7",
+  "Id": "68b60afb45dd55144df1a596f24ae85b",
   "PWarehouse": "Djarum",
-  "Name": "Koko",
-  "RentalType": "Sayur",
-  "Large": 9,
-  "DateIn": "23 Feb 2009",
-  "DateOut": "24 Feb 2010",
-  "Price": 0
- },
- {
-  "Id": "206e8e5e74a2a33379e0e2be7f2ce6d1",
-  "PWarehouse": "Djarum",
-  "Name": "riko",
-  "RentalType": "bawang",
-  "Large": 9,
-  "DateIn": "9 maret 2000",
-  "DateOut": "10 maret 2001",
-  "Price": 0
- },
- {
-  "Id": "37f525e2b6fc3cb4abd882f708ab80eb",
-  "PWarehouse": "Djarum",
-  "Name": "koko",
-  "RentalType": "ikan",
-  "Large": 7,
-  "DateIn": "20 aoril 2000",
-  "DateOut": "21 april 2010",
-  "Price": 0
- },
- {
-  "Id": "0b95e26c1f72933d2e9114579f0a538c",
-  "PWarehouse": "Djarum",
-  "Name": "Holo",
-  "RentalType": "Bawang",
-  "Large": 6,
-  "DateIn": "2 Maret 2009",
-  "DateOut": "3 Maret 2010",
-  "Price": 0
- },
- {
-  "Id": "a1f8b2a5971e2eb9c2447ddb9a104a31",
-  "PWarehouse": "Djarum",
-  "Name": "kulo",
-  "RentalType": "bawang",
-  "Large": 9,
-  "DateIn": "10 mar 2020",
-  "DateOut": "19 mar 2020",
-  "Price": 0
- },
- {
-  "Id": "1406f37190e825427440bc020919218a",
-  "PWarehouse": "Gudang Garam",
-  "Name": "gogo",
-  "RentalType": "bawang",
-  "Large": 9,
-  "DateIn": "02 mar 0202",
-  "DateOut": "90 mar 2020",
-  "Price": 0
- },
- {
-  "Id": "a1f8b2a5971e2eb9c2447ddb9a104a31",
-  "PWarehouse": "Gudang Garam",
-  "Name": "kulo",
-  "RentalType": "harian",
-  "Large": 0,
-  "DateIn": "09 apr 2020",
-  "DateOut": "19 apr 2021",
-  "Price": 0
+  "Name": "Yuriko",
+  "RentalType": "Mingguan",
+  "Large": 50,
+  "DateIn": "01 Februari 2020",
+  "DateOut": "08 Februari 2020",
+  "Price": 50000000
  }
 ]
